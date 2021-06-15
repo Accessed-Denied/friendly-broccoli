@@ -41,6 +41,11 @@ class LoginVC: UIViewController {
         signUpBtn.layer.borderWidth = 2
     }
     
+    //MARK: - viewWillDisappear
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
    
     
     
