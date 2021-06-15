@@ -3,16 +3,75 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D29A38AA3EDFD722D6AC3B1 /* Pods_friendly_broccoli_friendly_broccoliUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABDA75007AF98623213FFE /* Pods_friendly_broccoli_friendly_broccoliUITests.framework */; };
+		BEA26DCD941E5B797FC77AB3 /* Pods_friendly_broccoli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F40E821DF3FD072AA8ED6C1 /* Pods_friendly_broccoli.framework */; };
+		D85298BA518F590C50611B67 /* Pods_friendly_broccoliTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA54F3D3E1105EC83FD6A62D /* Pods_friendly_broccoliTests.framework */; };
 		FAB81B3526791EA200BDA5BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB81B3426791EA200BDA5BD /* AppDelegate.swift */; };
-		FAB81B3C26791EA200BDA5BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB81B3A26791EA200BDA5BD /* Main.storyboard */; };
 		FAB81B3E26791EA700BDA5BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB81B3D26791EA700BDA5BD /* Assets.xcassets */; };
 		FAB81B4126791EA700BDA5BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB81B3F26791EA700BDA5BD /* LaunchScreen.storyboard */; };
 		FAB81B4C26791EA700BDA5BD /* friendly_broccoliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB81B4B26791EA700BDA5BD /* friendly_broccoliTests.swift */; };
 		FAB81B5726791EA700BDA5BD /* friendly_broccoliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB81B5626791EA700BDA5BD /* friendly_broccoliUITests.swift */; };
+		FAC38BF82679283B0089BDB3 /* GroupChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC38BF72679283B0089BDB3 /* GroupChat.storyboard */; };
+		FAC38BFD267928430089BDB3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC38BFC267928430089BDB3 /* Home.storyboard */; };
+		FAC38C02267928490089BDB3 /* MyChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC38C01267928490089BDB3 /* MyChat.storyboard */; };
+		FAC38C072679284F0089BDB3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC38C062679284F0089BDB3 /* Settings.storyboard */; };
+		FAC38C0C267928560089BDB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC38C0B267928560089BDB3 /* Main.storyboard */; };
+		FAC38C24267928B30089BDB3 /* GroupChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C14267928B20089BDB3 /* GroupChat.swift */; };
+		FAC38C25267928B30089BDB3 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C16267928B30089BDB3 /* ProfileVC.swift */; };
+		FAC38C26267928B30089BDB3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C17267928B30089BDB3 /* Home.swift */; };
+		FAC38C27267928B30089BDB3 /* CreatePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C18267928B30089BDB3 /* CreatePost.swift */; };
+		FAC38C28267928B30089BDB3 /* PostListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C19267928B30089BDB3 /* PostListingVC.swift */; };
+		FAC38C29267928B30089BDB3 /* PostDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C1A267928B30089BDB3 /* PostDetailsVC.swift */; };
+		FAC38C2A267928B30089BDB3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C1C267928B30089BDB3 /* LoginVC.swift */; };
+		FAC38C2B267928B30089BDB3 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C1D267928B30089BDB3 /* Register.swift */; };
+		FAC38C2C267928B30089BDB3 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C1E267928B30089BDB3 /* WelcomeVC.swift */; };
+		FAC38C2D267928B30089BDB3 /* MyChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C20267928B30089BDB3 /* MyChat.swift */; };
+		FAC38C2E267928B30089BDB3 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C21267928B30089BDB3 /* ChatController.swift */; };
+		FAC38C2F267928B30089BDB3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C23267928B30089BDB3 /* Settings.swift */; };
+		FAC38C59267929A90089BDB3 /* CustomTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC38C56267929A90089BDB3 /* CustomTabBarView.xib */; };
+		FAC38C5A267929A90089BDB3 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C57267929A90089BDB3 /* CustomTabBarView.swift */; };
+		FAC38C5B267929A90089BDB3 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C58267929A90089BDB3 /* CustomTabBarController.swift */; };
+		FAC38C6126792A280089BDB3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C6026792A280089BDB3 /* Extensions.swift */; };
+		FAC38C6926792A3B0089BDB3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C6526792A3B0089BDB3 /* User.swift */; };
+		FAC38C6A26792A3B0089BDB3 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C6626792A3B0089BDB3 /* Conversation.swift */; };
+		FAC38C6B26792A3B0089BDB3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C6726792A3B0089BDB3 /* Message.swift */; };
+		FAC38C6C26792A3B0089BDB3 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C6826792A3B0089BDB3 /* Group.swift */; };
+		FAC38C7726792A4B0089BDB3 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C7126792A4B0089BDB3 /* CustomView.swift */; };
+		FAC38C7826792A4B0089BDB3 /* GlobalConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C7226792A4B0089BDB3 /* GlobalConstant.swift */; };
+		FAC38C7926792A4B0089BDB3 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C7326792A4B0089BDB3 /* AppModel.swift */; };
+		FAC38C7A26792A4B0089BDB3 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C7426792A4B0089BDB3 /* AudioService.swift */; };
+		FAC38C7B26792A4B0089BDB3 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C7526792A4B0089BDB3 /* CustomTextField.swift */; };
+		FAC38C7C26792A4B0089BDB3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C7626792A4B0089BDB3 /* Utility.swift */; };
+		FAC38C9126792A580089BDB3 /* TextChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C8226792A580089BDB3 /* TextChatCell.swift */; };
+		FAC38C9226792A580089BDB3 /* LatestMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C8326792A580089BDB3 /* LatestMessageCell.swift */; };
+		FAC38C9326792A580089BDB3 /* PostDetailsMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C8426792A580089BDB3 /* PostDetailsMediaCell.swift */; };
+		FAC38C9426792A580089BDB3 /* PostDetailsContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C8526792A580089BDB3 /* PostDetailsContentCell.swift */; };
+		FAC38C9526792A580089BDB3 /* PostDetailsContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC38C8626792A580089BDB3 /* PostDetailsContentCell.xib */; };
+		FAC38C9626792A580089BDB3 /* LatestMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC38C8726792A580089BDB3 /* LatestMessageCell.xib */; };
+		FAC38C9726792A580089BDB3 /* ImageChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC38C8826792A580089BDB3 /* ImageChatCell.xib */; };
+		FAC38C9826792A580089BDB3 /* ImageChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C8926792A580089BDB3 /* ImageChatCell.swift */; };
+		FAC38C9926792A580089BDB3 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC38C8A26792A580089BDB3 /* PostCell.xib */; };
+		FAC38C9A26792A580089BDB3 /* TextChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC38C8B26792A580089BDB3 /* TextChatCell.xib */; };
+		FAC38C9B26792A580089BDB3 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C8C26792A580089BDB3 /* PostCell.swift */; };
+		FAC38C9C26792A580089BDB3 /* PostDetailsMediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC38C8D26792A580089BDB3 /* PostDetailsMediaCell.xib */; };
+		FAC38C9D26792A580089BDB3 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38C8F26792A580089BDB3 /* HomeCell.swift */; };
+		FAC38C9E26792A580089BDB3 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC38C9026792A580089BDB3 /* HomeCell.xib */; };
+		FAC38CA526792A620089BDB3 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC38CA326792A620089BDB3 /* Montserrat-Bold.ttf */; };
+		FAC38CA626792A620089BDB3 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC38CA426792A620089BDB3 /* Montserrat-Regular.ttf */; };
+		FAC38CAB26792A6D0089BDB3 /* newMessage.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAC38CAA26792A6D0089BDB3 /* newMessage.wav */; };
+		FAC38CB326792A7B0089BDB3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38CB026792A7B0089BDB3 /* Logger.swift */; };
+		FAC38CB426792A7B0089BDB3 /* DispatchQueueHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38CB126792A7B0089BDB3 /* DispatchQueueHelper.swift */; };
+		FAC38CB526792A7B0089BDB3 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38CB226792A7B0089BDB3 /* System.swift */; };
+		FAC38CBE26792A8B0089BDB3 /* ChatControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38CB926792A8A0089BDB3 /* ChatControllerViewModel.swift */; };
+		FAC38CBF26792A8B0089BDB3 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38CBA26792A8A0089BDB3 /* RegisterViewModel.swift */; };
+		FAC38CC026792A8B0089BDB3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38CBB26792A8A0089BDB3 /* LoginViewModel.swift */; };
+		FAC38CC126792A8B0089BDB3 /* MyChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38CBC26792A8B0089BDB3 /* MyChatListViewModel.swift */; };
+		FAC38CC226792A8B0089BDB3 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38CBD26792A8B0089BDB3 /* PostListViewModel.swift */; };
+		FAC38CC726792B3A0089BDB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAC38CC626792B3A0089BDB3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +92,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06FCF7A50F3BBDDA8BF4ECB8 /* Pods-friendly-broccoli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-friendly-broccoli.release.xcconfig"; path = "Target Support Files/Pods-friendly-broccoli/Pods-friendly-broccoli.release.xcconfig"; sourceTree = "<group>"; };
+		1962299DC64FEECE19786266 /* Pods-friendly-broccoli-friendly-broccoliUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-friendly-broccoli-friendly-broccoliUITests.debug.xcconfig"; path = "Target Support Files/Pods-friendly-broccoli-friendly-broccoliUITests/Pods-friendly-broccoli-friendly-broccoliUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F40E821DF3FD072AA8ED6C1 /* Pods_friendly_broccoli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_friendly_broccoli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EDC8FD627078C449C98F0EA /* Pods-friendly-broccoliTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-friendly-broccoliTests.debug.xcconfig"; path = "Target Support Files/Pods-friendly-broccoliTests/Pods-friendly-broccoliTests.debug.xcconfig"; sourceTree = "<group>"; };
+		805135591BC88009AE85B937 /* Pods-friendly-broccoli-friendly-broccoliUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-friendly-broccoli-friendly-broccoliUITests.release.xcconfig"; path = "Target Support Files/Pods-friendly-broccoli-friendly-broccoliUITests/Pods-friendly-broccoli-friendly-broccoliUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A6ABDA75007AF98623213FFE /* Pods_friendly_broccoli_friendly_broccoliUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_friendly_broccoli_friendly_broccoliUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D950049DDE96CADB294F4E48 /* Pods-friendly-broccoli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-friendly-broccoli.debug.xcconfig"; path = "Target Support Files/Pods-friendly-broccoli/Pods-friendly-broccoli.debug.xcconfig"; sourceTree = "<group>"; };
+		E69019603FC1470D0C1EA083 /* Pods-friendly-broccoliTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-friendly-broccoliTests.release.xcconfig"; path = "Target Support Files/Pods-friendly-broccoliTests/Pods-friendly-broccoliTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA54F3D3E1105EC83FD6A62D /* Pods_friendly_broccoliTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_friendly_broccoliTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB81B3126791EA200BDA5BD /* friendly-broccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "friendly-broccoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB81B3426791EA200BDA5BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAB81B3B26791EA200BDA5BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB81B3D26791EA700BDA5BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB81B4026791EA700BDA5BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB81B4226791EA700BDA5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +112,63 @@
 		FAB81B5226791EA700BDA5BD /* friendly-broccoliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "friendly-broccoliUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB81B5626791EA700BDA5BD /* friendly_broccoliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendly_broccoliUITests.swift; sourceTree = "<group>"; };
 		FAB81B5826791EA700BDA5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC38BF72679283B0089BDB3 /* GroupChat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GroupChat.storyboard; sourceTree = "<group>"; };
+		FAC38BFC267928430089BDB3 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FAC38C01267928490089BDB3 /* MyChat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyChat.storyboard; sourceTree = "<group>"; };
+		FAC38C062679284F0089BDB3 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		FAC38C0B267928560089BDB3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FAC38C14267928B20089BDB3 /* GroupChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChat.swift; sourceTree = "<group>"; };
+		FAC38C16267928B30089BDB3 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		FAC38C17267928B30089BDB3 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FAC38C18267928B30089BDB3 /* CreatePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePost.swift; sourceTree = "<group>"; };
+		FAC38C19267928B30089BDB3 /* PostListingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListingVC.swift; sourceTree = "<group>"; };
+		FAC38C1A267928B30089BDB3 /* PostDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailsVC.swift; sourceTree = "<group>"; };
+		FAC38C1C267928B30089BDB3 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FAC38C1D267928B30089BDB3 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		FAC38C1E267928B30089BDB3 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		FAC38C20267928B30089BDB3 /* MyChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyChat.swift; sourceTree = "<group>"; };
+		FAC38C21267928B30089BDB3 /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		FAC38C23267928B30089BDB3 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		FAC38C56267929A90089BDB3 /* CustomTabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTabBarView.xib; sourceTree = "<group>"; };
+		FAC38C57267929A90089BDB3 /* CustomTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		FAC38C58267929A90089BDB3 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		FAC38C6026792A280089BDB3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FAC38C6526792A3B0089BDB3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FAC38C6626792A3B0089BDB3 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		FAC38C6726792A3B0089BDB3 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FAC38C6826792A3B0089BDB3 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		FAC38C7126792A4B0089BDB3 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		FAC38C7226792A4B0089BDB3 /* GlobalConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstant.swift; sourceTree = "<group>"; };
+		FAC38C7326792A4B0089BDB3 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		FAC38C7426792A4B0089BDB3 /* AudioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		FAC38C7526792A4B0089BDB3 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FAC38C7626792A4B0089BDB3 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		FAC38C8226792A580089BDB3 /* TextChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextChatCell.swift; sourceTree = "<group>"; };
+		FAC38C8326792A580089BDB3 /* LatestMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestMessageCell.swift; sourceTree = "<group>"; };
+		FAC38C8426792A580089BDB3 /* PostDetailsMediaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailsMediaCell.swift; sourceTree = "<group>"; };
+		FAC38C8526792A580089BDB3 /* PostDetailsContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailsContentCell.swift; sourceTree = "<group>"; };
+		FAC38C8626792A580089BDB3 /* PostDetailsContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostDetailsContentCell.xib; sourceTree = "<group>"; };
+		FAC38C8726792A580089BDB3 /* LatestMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LatestMessageCell.xib; sourceTree = "<group>"; };
+		FAC38C8826792A580089BDB3 /* ImageChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageChatCell.xib; sourceTree = "<group>"; };
+		FAC38C8926792A580089BDB3 /* ImageChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageChatCell.swift; sourceTree = "<group>"; };
+		FAC38C8A26792A580089BDB3 /* PostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		FAC38C8B26792A580089BDB3 /* TextChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextChatCell.xib; sourceTree = "<group>"; };
+		FAC38C8C26792A580089BDB3 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		FAC38C8D26792A580089BDB3 /* PostDetailsMediaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostDetailsMediaCell.xib; sourceTree = "<group>"; };
+		FAC38C8F26792A580089BDB3 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		FAC38C9026792A580089BDB3 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		FAC38CA326792A620089BDB3 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		FAC38CA426792A620089BDB3 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		FAC38CAA26792A6D0089BDB3 /* newMessage.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = newMessage.wav; sourceTree = "<group>"; };
+		FAC38CB026792A7B0089BDB3 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		FAC38CB126792A7B0089BDB3 /* DispatchQueueHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueueHelper.swift; sourceTree = "<group>"; };
+		FAC38CB226792A7B0089BDB3 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		FAC38CB926792A8A0089BDB3 /* ChatControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatControllerViewModel.swift; sourceTree = "<group>"; };
+		FAC38CBA26792A8A0089BDB3 /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		FAC38CBB26792A8A0089BDB3 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FAC38CBC26792A8B0089BDB3 /* MyChatListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyChatListViewModel.swift; sourceTree = "<group>"; };
+		FAC38CBD26792A8B0089BDB3 /* PostListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		FAC38CC626792B3A0089BDB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA26DCD941E5B797FC77AB3 /* Pods_friendly_broccoli.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85298BA518F590C50611B67 /* Pods_friendly_broccoliTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +192,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D29A38AA3EDFD722D6AC3B1 /* Pods_friendly_broccoli_friendly_broccoliUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		394944D5068BA062168E51A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F40E821DF3FD072AA8ED6C1 /* Pods_friendly_broccoli.framework */,
+				A6ABDA75007AF98623213FFE /* Pods_friendly_broccoli_friendly_broccoliUITests.framework */,
+				FA54F3D3E1105EC83FD6A62D /* Pods_friendly_broccoliTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4DE02B802BE6EF1E7D0AD41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D950049DDE96CADB294F4E48 /* Pods-friendly-broccoli.debug.xcconfig */,
+				06FCF7A50F3BBDDA8BF4ECB8 /* Pods-friendly-broccoli.release.xcconfig */,
+				1962299DC64FEECE19786266 /* Pods-friendly-broccoli-friendly-broccoliUITests.debug.xcconfig */,
+				805135591BC88009AE85B937 /* Pods-friendly-broccoli-friendly-broccoliUITests.release.xcconfig */,
+				6EDC8FD627078C449C98F0EA /* Pods-friendly-broccoliTests.debug.xcconfig */,
+				E69019603FC1470D0C1EA083 /* Pods-friendly-broccoliTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FAB81B2826791EA200BDA5BD = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +229,8 @@
 				FAB81B4A26791EA700BDA5BD /* friendly-broccoliTests */,
 				FAB81B5526791EA700BDA5BD /* friendly-broccoliUITests */,
 				FAB81B3226791EA200BDA5BD /* Products */,
+				D4DE02B802BE6EF1E7D0AD41 /* Pods */,
+				394944D5068BA062168E51A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +247,22 @@
 		FAB81B3326791EA200BDA5BD /* friendly-broccoli */ = {
 			isa = PBXGroup;
 			children = (
+				FAC38CAF26792A7B0089BDB3 /* SysLogger */,
+				FAC38CAA26792A6D0089BDB3 /* newMessage.wav */,
+				FAC38CA226792A620089BDB3 /* Font */,
+				FAC38C8026792A580089BDB3 /* Xibs */,
+				FAC38C7026792A4B0089BDB3 /* ProjectHelper */,
+				FAC38C5F26792A280089BDB3 /* Extensions */,
+				FAC38C55267929A90089BDB3 /* CustomBottomBar */,
+				FAC38C122679289C0089BDB3 /* ViewModel */,
+				FAC38C112679288F0089BDB3 /* View */,
+				FAC38C10267928880089BDB3 /* Model */,
 				FAB81B3426791EA200BDA5BD /* AppDelegate.swift */,
-				FAB81B3A26791EA200BDA5BD /* Main.storyboard */,
+				FAC38BF0267927130089BDB3 /* Storyboard */,
 				FAB81B3D26791EA700BDA5BD /* Assets.xcassets */,
 				FAB81B3F26791EA700BDA5BD /* LaunchScreen.storyboard */,
 				FAB81B4226791EA700BDA5BD /* Info.plist */,
+				FAC38CC626792B3A0089BDB3 /* GoogleService-Info.plist */,
 			);
 			path = "friendly-broccoli";
 			sourceTree = "<group>";
@@ -122,6 +285,187 @@
 			path = "friendly-broccoliUITests";
 			sourceTree = "<group>";
 		};
+		FAC38BF0267927130089BDB3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C0B267928560089BDB3 /* Main.storyboard */,
+				FAC38C062679284F0089BDB3 /* Settings.storyboard */,
+				FAC38C01267928490089BDB3 /* MyChat.storyboard */,
+				FAC38BFC267928430089BDB3 /* Home.storyboard */,
+				FAC38BF72679283B0089BDB3 /* GroupChat.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FAC38C10267928880089BDB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C6626792A3B0089BDB3 /* Conversation.swift */,
+				FAC38C6826792A3B0089BDB3 /* Group.swift */,
+				FAC38C6726792A3B0089BDB3 /* Message.swift */,
+				FAC38C6526792A3B0089BDB3 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAC38C112679288F0089BDB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C13267928B20089BDB3 /* GroupChat */,
+				FAC38C15267928B30089BDB3 /* Home */,
+				FAC38C1B267928B30089BDB3 /* Main */,
+				FAC38C1F267928B30089BDB3 /* MyChat */,
+				FAC38C22267928B30089BDB3 /* Settings */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAC38C122679289C0089BDB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38CB926792A8A0089BDB3 /* ChatControllerViewModel.swift */,
+				FAC38CBB26792A8A0089BDB3 /* LoginViewModel.swift */,
+				FAC38CBC26792A8B0089BDB3 /* MyChatListViewModel.swift */,
+				FAC38CBD26792A8B0089BDB3 /* PostListViewModel.swift */,
+				FAC38CBA26792A8A0089BDB3 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAC38C13267928B20089BDB3 /* GroupChat */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C14267928B20089BDB3 /* GroupChat.swift */,
+			);
+			path = GroupChat;
+			sourceTree = "<group>";
+		};
+		FAC38C15267928B30089BDB3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C16267928B30089BDB3 /* ProfileVC.swift */,
+				FAC38C17267928B30089BDB3 /* Home.swift */,
+				FAC38C18267928B30089BDB3 /* CreatePost.swift */,
+				FAC38C19267928B30089BDB3 /* PostListingVC.swift */,
+				FAC38C1A267928B30089BDB3 /* PostDetailsVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FAC38C1B267928B30089BDB3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C1C267928B30089BDB3 /* LoginVC.swift */,
+				FAC38C1D267928B30089BDB3 /* Register.swift */,
+				FAC38C1E267928B30089BDB3 /* WelcomeVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FAC38C1F267928B30089BDB3 /* MyChat */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C20267928B30089BDB3 /* MyChat.swift */,
+				FAC38C21267928B30089BDB3 /* ChatController.swift */,
+			);
+			path = MyChat;
+			sourceTree = "<group>";
+		};
+		FAC38C22267928B30089BDB3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C23267928B30089BDB3 /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FAC38C55267929A90089BDB3 /* CustomBottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C56267929A90089BDB3 /* CustomTabBarView.xib */,
+				FAC38C57267929A90089BDB3 /* CustomTabBarView.swift */,
+				FAC38C58267929A90089BDB3 /* CustomTabBarController.swift */,
+			);
+			path = CustomBottomBar;
+			sourceTree = "<group>";
+		};
+		FAC38C5F26792A280089BDB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C6026792A280089BDB3 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAC38C7026792A4B0089BDB3 /* ProjectHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C7126792A4B0089BDB3 /* CustomView.swift */,
+				FAC38C7226792A4B0089BDB3 /* GlobalConstant.swift */,
+				FAC38C7326792A4B0089BDB3 /* AppModel.swift */,
+				FAC38C7426792A4B0089BDB3 /* AudioService.swift */,
+				FAC38C7526792A4B0089BDB3 /* CustomTextField.swift */,
+				FAC38C7626792A4B0089BDB3 /* Utility.swift */,
+			);
+			path = ProjectHelper;
+			sourceTree = "<group>";
+		};
+		FAC38C8026792A580089BDB3 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C8126792A580089BDB3 /* TableViewXib */,
+				FAC38C8E26792A580089BDB3 /* CollectionXib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		FAC38C8126792A580089BDB3 /* TableViewXib */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C8226792A580089BDB3 /* TextChatCell.swift */,
+				FAC38C8326792A580089BDB3 /* LatestMessageCell.swift */,
+				FAC38C8426792A580089BDB3 /* PostDetailsMediaCell.swift */,
+				FAC38C8526792A580089BDB3 /* PostDetailsContentCell.swift */,
+				FAC38C8626792A580089BDB3 /* PostDetailsContentCell.xib */,
+				FAC38C8726792A580089BDB3 /* LatestMessageCell.xib */,
+				FAC38C8826792A580089BDB3 /* ImageChatCell.xib */,
+				FAC38C8926792A580089BDB3 /* ImageChatCell.swift */,
+				FAC38C8A26792A580089BDB3 /* PostCell.xib */,
+				FAC38C8B26792A580089BDB3 /* TextChatCell.xib */,
+				FAC38C8C26792A580089BDB3 /* PostCell.swift */,
+				FAC38C8D26792A580089BDB3 /* PostDetailsMediaCell.xib */,
+			);
+			path = TableViewXib;
+			sourceTree = "<group>";
+		};
+		FAC38C8E26792A580089BDB3 /* CollectionXib */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38C8F26792A580089BDB3 /* HomeCell.swift */,
+				FAC38C9026792A580089BDB3 /* HomeCell.xib */,
+			);
+			path = CollectionXib;
+			sourceTree = "<group>";
+		};
+		FAC38CA226792A620089BDB3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38CA326792A620089BDB3 /* Montserrat-Bold.ttf */,
+				FAC38CA426792A620089BDB3 /* Montserrat-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		FAC38CAF26792A7B0089BDB3 /* SysLogger */ = {
+			isa = PBXGroup;
+			children = (
+				FAC38CB026792A7B0089BDB3 /* Logger.swift */,
+				FAC38CB126792A7B0089BDB3 /* DispatchQueueHelper.swift */,
+				FAC38CB226792A7B0089BDB3 /* System.swift */,
+			);
+			path = SysLogger;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +473,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAB81B5B26791EA700BDA5BD /* Build configuration list for PBXNativeTarget "friendly-broccoli" */;
 			buildPhases = (
+				76AA67ACE323A871218CA843 /* [CP] Check Pods Manifest.lock */,
 				FAB81B2D26791EA200BDA5BD /* Sources */,
 				FAB81B2E26791EA200BDA5BD /* Frameworks */,
 				FAB81B2F26791EA200BDA5BD /* Resources */,
+				053F312ED7C2EC0C392DDDEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +492,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAB81B5E26791EA700BDA5BD /* Build configuration list for PBXNativeTarget "friendly-broccoliTests" */;
 			buildPhases = (
+				12AEC5C2B0CE2C99743AAB75 /* [CP] Check Pods Manifest.lock */,
 				FAB81B4326791EA700BDA5BD /* Sources */,
 				FAB81B4426791EA700BDA5BD /* Frameworks */,
 				FAB81B4526791EA700BDA5BD /* Resources */,
@@ -164,9 +511,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAB81B6126791EA700BDA5BD /* Build configuration list for PBXNativeTarget "friendly-broccoliUITests" */;
 			buildPhases = (
+				2CF18F4EC48D9A8479CC2D0A /* [CP] Check Pods Manifest.lock */,
 				FAB81B4E26791EA700BDA5BD /* Sources */,
 				FAB81B4F26791EA700BDA5BD /* Frameworks */,
 				FAB81B5026791EA700BDA5BD /* Resources */,
+				6D4C29F8B4C8A433F2564AB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,9 +574,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC38C0C267928560089BDB3 /* Main.storyboard in Resources */,
+				FAC38CAB26792A6D0089BDB3 /* newMessage.wav in Resources */,
+				FAC38C02267928490089BDB3 /* MyChat.storyboard in Resources */,
+				FAC38CA626792A620089BDB3 /* Montserrat-Regular.ttf in Resources */,
 				FAB81B4126791EA700BDA5BD /* LaunchScreen.storyboard in Resources */,
+				FAC38C9A26792A580089BDB3 /* TextChatCell.xib in Resources */,
+				FAC38C9E26792A580089BDB3 /* HomeCell.xib in Resources */,
+				FAC38C9726792A580089BDB3 /* ImageChatCell.xib in Resources */,
+				FAC38BF82679283B0089BDB3 /* GroupChat.storyboard in Resources */,
+				FAC38C9626792A580089BDB3 /* LatestMessageCell.xib in Resources */,
+				FAC38C9C26792A580089BDB3 /* PostDetailsMediaCell.xib in Resources */,
+				FAC38CC726792B3A0089BDB3 /* GoogleService-Info.plist in Resources */,
+				FAC38C9526792A580089BDB3 /* PostDetailsContentCell.xib in Resources */,
+				FAC38C9926792A580089BDB3 /* PostCell.xib in Resources */,
+				FAC38C072679284F0089BDB3 /* Settings.storyboard in Resources */,
+				FAC38CA526792A620089BDB3 /* Montserrat-Bold.ttf in Resources */,
 				FAB81B3E26791EA700BDA5BD /* Assets.xcassets in Resources */,
-				FAB81B3C26791EA200BDA5BD /* Main.storyboard in Resources */,
+				FAC38BFD267928430089BDB3 /* Home.storyboard in Resources */,
+				FAC38C59267929A90089BDB3 /* CustomTabBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,12 +612,155 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		053F312ED7C2EC0C392DDDEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-friendly-broccoli/Pods-friendly-broccoli-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-friendly-broccoli/Pods-friendly-broccoli-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-friendly-broccoli/Pods-friendly-broccoli-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12AEC5C2B0CE2C99743AAB75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-friendly-broccoliTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CF18F4EC48D9A8479CC2D0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-friendly-broccoli-friendly-broccoliUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D4C29F8B4C8A433F2564AB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-friendly-broccoli-friendly-broccoliUITests/Pods-friendly-broccoli-friendly-broccoliUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-friendly-broccoli-friendly-broccoliUITests/Pods-friendly-broccoli-friendly-broccoliUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-friendly-broccoli-friendly-broccoliUITests/Pods-friendly-broccoli-friendly-broccoliUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76AA67ACE323A871218CA843 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-friendly-broccoli-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAB81B2D26791EA200BDA5BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC38C25267928B30089BDB3 /* ProfileVC.swift in Sources */,
+				FAC38C2C267928B30089BDB3 /* WelcomeVC.swift in Sources */,
+				FAC38CC126792A8B0089BDB3 /* MyChatListViewModel.swift in Sources */,
+				FAC38C5B267929A90089BDB3 /* CustomTabBarController.swift in Sources */,
+				FAC38C7726792A4B0089BDB3 /* CustomView.swift in Sources */,
+				FAC38C6C26792A3B0089BDB3 /* Group.swift in Sources */,
+				FAC38C9126792A580089BDB3 /* TextChatCell.swift in Sources */,
+				FAC38C2F267928B30089BDB3 /* Settings.swift in Sources */,
+				FAC38C28267928B30089BDB3 /* PostListingVC.swift in Sources */,
+				FAC38CC026792A8B0089BDB3 /* LoginViewModel.swift in Sources */,
+				FAC38C9826792A580089BDB3 /* ImageChatCell.swift in Sources */,
+				FAC38C9226792A580089BDB3 /* LatestMessageCell.swift in Sources */,
+				FAC38C2A267928B30089BDB3 /* LoginVC.swift in Sources */,
+				FAC38C7A26792A4B0089BDB3 /* AudioService.swift in Sources */,
+				FAC38C7B26792A4B0089BDB3 /* CustomTextField.swift in Sources */,
+				FAC38C2B267928B30089BDB3 /* Register.swift in Sources */,
+				FAC38C9326792A580089BDB3 /* PostDetailsMediaCell.swift in Sources */,
+				FAC38C9B26792A580089BDB3 /* PostCell.swift in Sources */,
+				FAC38CB526792A7B0089BDB3 /* System.swift in Sources */,
+				FAC38C6B26792A3B0089BDB3 /* Message.swift in Sources */,
+				FAC38CC226792A8B0089BDB3 /* PostListViewModel.swift in Sources */,
+				FAC38C6926792A3B0089BDB3 /* User.swift in Sources */,
 				FAB81B3526791EA200BDA5BD /* AppDelegate.swift in Sources */,
+				FAC38C5A267929A90089BDB3 /* CustomTabBarView.swift in Sources */,
+				FAC38C7926792A4B0089BDB3 /* AppModel.swift in Sources */,
+				FAC38C26267928B30089BDB3 /* Home.swift in Sources */,
+				FAC38C9426792A580089BDB3 /* PostDetailsContentCell.swift in Sources */,
+				FAC38C2D267928B30089BDB3 /* MyChat.swift in Sources */,
+				FAC38C6A26792A3B0089BDB3 /* Conversation.swift in Sources */,
+				FAC38CB326792A7B0089BDB3 /* Logger.swift in Sources */,
+				FAC38CBF26792A8B0089BDB3 /* RegisterViewModel.swift in Sources */,
+				FAC38C9D26792A580089BDB3 /* HomeCell.swift in Sources */,
+				FAC38C7826792A4B0089BDB3 /* GlobalConstant.swift in Sources */,
+				FAC38C7C26792A4B0089BDB3 /* Utility.swift in Sources */,
+				FAC38C6126792A280089BDB3 /* Extensions.swift in Sources */,
+				FAC38C27267928B30089BDB3 /* CreatePost.swift in Sources */,
+				FAC38CBE26792A8B0089BDB3 /* ChatControllerViewModel.swift in Sources */,
+				FAC38CB426792A7B0089BDB3 /* DispatchQueueHelper.swift in Sources */,
+				FAC38C24267928B30089BDB3 /* GroupChat.swift in Sources */,
+				FAC38C29267928B30089BDB3 /* PostDetailsVC.swift in Sources */,
+				FAC38C2E267928B30089BDB3 /* ChatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +796,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAB81B3A26791EA200BDA5BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAB81B3B26791EA200BDA5BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAB81B3F26791EA700BDA5BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -425,6 +925,7 @@
 		};
 		FAB81B5C26791EA700BDA5BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D950049DDE96CADB294F4E48 /* Pods-friendly-broccoli.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,6 +946,7 @@
 		};
 		FAB81B5D26791EA700BDA5BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06FCF7A50F3BBDDA8BF4ECB8 /* Pods-friendly-broccoli.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +967,7 @@
 		};
 		FAB81B5F26791EA700BDA5BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EDC8FD627078C449C98F0EA /* Pods-friendly-broccoliTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +990,7 @@
 		};
 		FAB81B6026791EA700BDA5BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E69019603FC1470D0C1EA083 /* Pods-friendly-broccoliTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +1013,7 @@
 		};
 		FAB81B6226791EA700BDA5BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1962299DC64FEECE19786266 /* Pods-friendly-broccoli-friendly-broccoliUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +1034,7 @@
 		};
 		FAB81B6326791EA700BDA5BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805135591BC88009AE85B937 /* Pods-friendly-broccoli-friendly-broccoliUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
