@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FAB81B3526791EA200BDA5BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB81B3426791EA200BDA5BD /* AppDelegate.swift */; };
-		FAB81B3726791EA200BDA5BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB81B3626791EA200BDA5BD /* SceneDelegate.swift */; };
-		FAB81B3926791EA200BDA5BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB81B3826791EA200BDA5BD /* ViewController.swift */; };
 		FAB81B3C26791EA200BDA5BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB81B3A26791EA200BDA5BD /* Main.storyboard */; };
 		FAB81B3E26791EA700BDA5BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB81B3D26791EA700BDA5BD /* Assets.xcassets */; };
 		FAB81B4126791EA700BDA5BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB81B3F26791EA700BDA5BD /* LaunchScreen.storyboard */; };
@@ -37,8 +35,6 @@
 /* Begin PBXFileReference section */
 		FAB81B3126791EA200BDA5BD /* friendly-broccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "friendly-broccoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB81B3426791EA200BDA5BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAB81B3626791EA200BDA5BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAB81B3826791EA200BDA5BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAB81B3B26791EA200BDA5BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB81B3D26791EA700BDA5BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB81B4026791EA700BDA5BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,8 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				FAB81B3426791EA200BDA5BD /* AppDelegate.swift */,
-				FAB81B3626791EA200BDA5BD /* SceneDelegate.swift */,
-				FAB81B3826791EA200BDA5BD /* ViewController.swift */,
 				FAB81B3A26791EA200BDA5BD /* Main.storyboard */,
 				FAB81B3D26791EA700BDA5BD /* Assets.xcassets */,
 				FAB81B3F26791EA700BDA5BD /* LaunchScreen.storyboard */,
@@ -258,9 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB81B3926791EA200BDA5BD /* ViewController.swift in Sources */,
 				FAB81B3526791EA200BDA5BD /* AppDelegate.swift in Sources */,
-				FAB81B3726791EA200BDA5BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +431,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = "friendly-broccoli/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = "friendly-broccoli/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
