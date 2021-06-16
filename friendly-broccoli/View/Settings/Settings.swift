@@ -10,6 +10,13 @@ import UIKit
 
 class Settings: UIViewController {
 
+    //OUTLETS
+    @IBOutlet weak var blurView: UIView!
+    @IBOutlet weak var emailLbl: UILabel!
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var backgroundProfileImage: UIImageView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var navBarView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +25,17 @@ class Settings: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //MARK: - viewDidLayoutSubviews
+    override func viewDidLayoutSubviews() {
+        backgroundProfileImage.sainiSaabBlur(blurValue: 5)
+        profileImage.sainiCornerRadius(radius: profileImage.frame.height / 2)
+    }
     
     //MARK:- configUI
     private func configUI(){
+        profileImage.sainiCornerRadius(radius: profileImage.frame.height / 2)
+        
+        tableView.register(UINib(nibName: TABLE_VIEW_CELL.profileCell.rawValue, bundle: nil), forCellReuseIdentifier: TABLE_VIEW_CELL.profileCell.rawValue)
         
     }
     
@@ -65,5 +80,59 @@ class Settings: UIViewController {
         
         // Present the controller
         self.present(alertController, animated: true, completion: nil)
+    }
+}
+
+//MARK: - TableView DataSource and Delegate Methods
+extension Settings: UITableViewDelegate, UITableViewDataSource {
+    // numberOfRowsInSection
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return STATIC_DATA_TYPE.allCases.count
+    }
+    
+    // heightForRowAt
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        55
+    }
+    
+    // cellForRowAt
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TABLE_VIEW_CELL.profileCell.rawValue, for: indexPath) as? profileCell else { return UITableViewCell() }
+//        cell.listImage.image = UIImage(named: STATIC_ARRAYS.listImagesArray[indexPath.row])
+        cell.listTextLbl.text = STATIC_DATA_TYPE.allCases[indexPath.row].getValue()
+        if indexPath.row == 4 {
+            cell.nextArrowImage.isHidden = true
+        }else {
+            cell.nextArrowImage.isHidden = false
+        }
+        return cell
+    }
+    
+    // didSelectRowAt
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        switch indexPath.row {
+//        case 0:
+//            let vc = STORYBOARD.PROFILE.instantiateViewController(withIdentifier: PROFILE_STORYBOARD.StaticVC.rawValue) as! StaticVC
+//            vc.staticDataType = .aboutUs
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        case 1:
+//            let vc = STORYBOARD.PROFILE.instantiateViewController(withIdentifier: PROFILE_STORYBOARD.StaticVC.rawValue) as! StaticVC
+//            vc.staticDataType = .terms
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        case 2:
+//            // help
+//            let vc = STORYBOARD.PROFILE.instantiateViewController(withIdentifier: PROFILE_STORYBOARD.HelpVC.rawValue) as! HelpVC
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        case 3:
+//            // invite user
+//            let vc = STORYBOARD.PROFILE.instantiateViewController(withIdentifier: PROFILE_STORYBOARD.InviteUserVC.rawValue) as! InviteUserVC
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        case 4:
+//            // logout
+//            alertPopUp.displayAlert(vc: self, alertTitle: "Logout", message: "Are you sure?", okBtnTitle: "Yes", cancelBtnTitle: "Cancel")
+//            break
+//        default:
+//            break
+//        }
     }
 }

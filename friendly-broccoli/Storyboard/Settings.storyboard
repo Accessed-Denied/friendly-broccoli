@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Montserrat-Regular.otf">
+        <array key="Montserrat-Regular.ttf">
             <string>Montserrat-Regular</string>
         </array>
     </customFonts>
@@ -106,6 +106,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BPY-6B-mPs">
                                 <rect key="frame" x="0.0" y="317" width="375" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="V6r-wx-GOz" id="mVN-9c-6jf"/>
+                                    <outlet property="delegate" destination="V6r-wx-GOz" id="zes-Wx-Knt"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EFB-hd-Jry"/>
@@ -127,7 +131,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="3bQ-eo-JWv"/>
                     <connections>
+                        <outlet property="backgroundProfileImage" destination="IbT-WG-tEc" id="FSO-kU-sPb"/>
+                        <outlet property="blurView" destination="VH6-sz-EXy" id="x9T-is-ukS"/>
+                        <outlet property="emailLbl" destination="kL7-H2-esg" id="34d-r0-4kW"/>
+                        <outlet property="nameLbl" destination="Qea-3m-fTa" id="ymL-QR-Acg"/>
                         <outlet property="navBarView" destination="fDC-uf-tQM" id="gp3-6P-pZx"/>
+                        <outlet property="profileImage" destination="QT2-0N-Yzf" id="BUG-87-WTi"/>
+                        <outlet property="tableView" destination="BPY-6B-mPs" id="DCE-Fe-OS6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SyY-5b-OrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
