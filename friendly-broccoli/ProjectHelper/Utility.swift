@@ -717,6 +717,16 @@ func dateFallsInCurrentWeek(date: Date) -> Bool {
      UIViewController.top?.present(alertCtr, animated: true)
  }
 
-
-
-
+extension UIView{
+    //MARK: - sainiSaabBlur
+    func sainiSaabBlur(blurValue:CGFloat){
+        let visualEffectView = VisualEffectView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height))
+        
+        // Configure the view with tint color, blur radius, etc
+        visualEffectView.colorTint = .clear
+        visualEffectView.colorTintAlpha = 0.2
+        visualEffectView.blurRadius = blurValue
+        visualEffectView.scale = 1
+        self.addSubview(visualEffectView)
+    }
+}
