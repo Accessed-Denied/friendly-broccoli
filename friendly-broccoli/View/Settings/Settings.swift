@@ -11,7 +11,6 @@ import UIKit
 class Settings: UIViewController {
 
     @IBOutlet weak var navBarView: UIView!
-    @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,16 +22,16 @@ class Settings: UIViewController {
     //MARK:- configUI
     private func configUI(){
         
-        collectionView.register(UINib(nibName: "ChatFriendCell", bundle: nil), forCellWithReuseIdentifier: "ChatFriendCell")
-        let flowLayout = UICollectionViewFlowLayout()
-        collectionView.collectionViewLayout = flowLayout
     }
     
+    //MARK: - viewWillAppear
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let tabBar : CustomTabBarController = self.tabBarController as! CustomTabBarController
         tabBar.setTabBarHidden(tabBarHidden: false)
     }
     
+    //MARK: - logout
     private func logout(){
         let attributedString = NSAttributedString(string: "Log Out", attributes: [
             
@@ -67,48 +66,4 @@ class Settings: UIViewController {
         // Present the controller
         self.present(alertController, animated: true, completion: nil)
     }
-    
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
-
-
-//  //MARK:- COllectionView Delegate and Datasource Methods
-//extension Settings: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
-//    func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        return 1
-//    }
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return SETTING.SETTING_DATA.count
-//    }
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChatFriendCell", for: indexPath) as? LatestMessageCell else{
-//            return UICollectionViewCell()
-//        }
-//        cell.friendNameLbl.text = SETTING.SETTING_DATA[indexPath.row]
-//        return cell
-//    }
-//    
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        if indexPath.row == 4{
-//           logout()
-//        }
-//    }
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let cellH : CGFloat = collectionView.frame.size.height - 10
-//        let cellW : CGFloat = collectionView.frame.size.width - 10
-//        
-//        return CGSize(width: cellW / 2, height: cellH / 3)
-//    }
-//}
