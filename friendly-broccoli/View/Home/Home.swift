@@ -12,10 +12,11 @@ class Home: UIViewController,UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var navBarView: UIView!
+    @IBOutlet weak var bottomConstraintOfCollectionView: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         log.success("\(Log.stats())This is a success log Test and i want this log on my server")/
         log.error(" \(Log.stats())This is an error log test i want this log on my server")/
         log.url(" \(Log.stats())This is a url log Test: https://google.com i want this log on my server")/
@@ -36,25 +37,20 @@ class Home: UIViewController,UICollectionViewDelegateFlowLayout {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-          if self.tabBarController != nil
-          {
-              let tabBar : CustomTabBarController = self.tabBarController as! CustomTabBarController
-              self.edgesForExtendedLayout = UIRectEdge.bottom
-              tabBar.setTabBarHidden(tabBarHidden: false)
-          }
-      }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        super.viewWillAppear(animated)
+        if self.tabBarController != nil
+        {
+            let tabBar : CustomTabBarController = self.tabBarController as! CustomTabBarController
+            self.edgesForExtendedLayout = UIRectEdge.bottom
+            tabBar.setTabBarHidden(tabBarHidden: false)
+        }
+        
+        if SCREEN.HEIGHT >= 812 {
+            bottomConstraintOfCollectionView.constant = 90
+        } else {
+            bottomConstraintOfCollectionView.constant = 56
+        }
     }
-    */
-
 }
 
 
