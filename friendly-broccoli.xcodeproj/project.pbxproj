@@ -72,6 +72,10 @@
 		FAC38CC126792A8B0089BDB3 /* MyChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38CBC26792A8B0089BDB3 /* MyChatListViewModel.swift */; };
 		FAC38CC226792A8B0089BDB3 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38CBD26792A8B0089BDB3 /* PostListViewModel.swift */; };
 		FAC38CC726792B3A0089BDB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAC38CC626792B3A0089BDB3 /* GoogleService-Info.plist */; };
+		FAC38E1A267A841F0089BDB3 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38E19267A841E0089BDB3 /* BlurView.swift */; };
+		FAC38E20267A84770089BDB3 /* profileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38E1E267A84770089BDB3 /* profileCell.swift */; };
+		FAC38E21267A84770089BDB3 /* profileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC38E1F267A84770089BDB3 /* profileCell.xib */; };
+		FAC38E26267A84980089BDB3 /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC38E25267A84980089BDB3 /* AppEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +173,10 @@
 		FAC38CBC26792A8B0089BDB3 /* MyChatListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyChatListViewModel.swift; sourceTree = "<group>"; };
 		FAC38CBD26792A8B0089BDB3 /* PostListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		FAC38CC626792B3A0089BDB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAC38E19267A841E0089BDB3 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		FAC38E1E267A84770089BDB3 /* profileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileCell.swift; sourceTree = "<group>"; };
+		FAC38E1F267A84770089BDB3 /* profileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = profileCell.xib; sourceTree = "<group>"; };
+		FAC38E25267A84980089BDB3 /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,12 +408,14 @@
 		FAC38C7026792A4B0089BDB3 /* ProjectHelper */ = {
 			isa = PBXGroup;
 			children = (
+				FAC38E19267A841E0089BDB3 /* BlurView.swift */,
 				FAC38C7126792A4B0089BDB3 /* CustomView.swift */,
 				FAC38C7226792A4B0089BDB3 /* GlobalConstant.swift */,
 				FAC38C7326792A4B0089BDB3 /* AppModel.swift */,
 				FAC38C7426792A4B0089BDB3 /* AudioService.swift */,
 				FAC38C7526792A4B0089BDB3 /* CustomTextField.swift */,
 				FAC38C7626792A4B0089BDB3 /* Utility.swift */,
+				FAC38E25267A84980089BDB3 /* AppEnums.swift */,
 			);
 			path = ProjectHelper;
 			sourceTree = "<group>";
@@ -434,6 +444,8 @@
 				FAC38C8B26792A580089BDB3 /* TextChatCell.xib */,
 				FAC38C8C26792A580089BDB3 /* PostCell.swift */,
 				FAC38C8D26792A580089BDB3 /* PostDetailsMediaCell.xib */,
+				FAC38E1E267A84770089BDB3 /* profileCell.swift */,
+				FAC38E1F267A84770089BDB3 /* profileCell.xib */,
 			);
 			path = TableViewXib;
 			sourceTree = "<group>";
@@ -587,6 +599,7 @@
 				FAC38C9C26792A580089BDB3 /* PostDetailsMediaCell.xib in Resources */,
 				FAC38CC726792B3A0089BDB3 /* GoogleService-Info.plist in Resources */,
 				FAC38C9526792A580089BDB3 /* PostDetailsContentCell.xib in Resources */,
+				FAC38E21267A84770089BDB3 /* profileCell.xib in Resources */,
 				FAC38C9926792A580089BDB3 /* PostCell.xib in Resources */,
 				FAC38C072679284F0089BDB3 /* Settings.storyboard in Resources */,
 				FAC38CA526792A620089BDB3 /* Montserrat-Bold.ttf in Resources */,
@@ -749,6 +762,8 @@
 				FAC38C9426792A580089BDB3 /* PostDetailsContentCell.swift in Sources */,
 				FAC38C2D267928B30089BDB3 /* MyChat.swift in Sources */,
 				FAC38C6A26792A3B0089BDB3 /* Conversation.swift in Sources */,
+				FAC38E20267A84770089BDB3 /* profileCell.swift in Sources */,
+				FAC38E1A267A841F0089BDB3 /* BlurView.swift in Sources */,
 				FAC38CB326792A7B0089BDB3 /* Logger.swift in Sources */,
 				FAC38CBF26792A8B0089BDB3 /* RegisterViewModel.swift in Sources */,
 				FAC38C9D26792A580089BDB3 /* HomeCell.swift in Sources */,
@@ -760,6 +775,7 @@
 				FAC38CB426792A7B0089BDB3 /* DispatchQueueHelper.swift in Sources */,
 				FAC38C24267928B30089BDB3 /* GroupChat.swift in Sources */,
 				FAC38C29267928B30089BDB3 /* PostDetailsVC.swift in Sources */,
+				FAC38E26267A84980089BDB3 /* AppEnums.swift in Sources */,
 				FAC38C2E267928B30089BDB3 /* ChatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

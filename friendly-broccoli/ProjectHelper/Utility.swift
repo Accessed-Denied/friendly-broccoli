@@ -717,6 +717,41 @@ func dateFallsInCurrentWeek(date: Date) -> Bool {
      UIViewController.top?.present(alertCtr, animated: true)
  }
 
+extension UIView{
+    //MARK: - sainiSaabBlur
+    func sainiSaabBlur(blurValue:CGFloat){
+        let visualEffectView = VisualEffectView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height))
+        
+        // Configure the view with tint color, blur radius, etc
+        visualEffectView.colorTint = .clear
+        visualEffectView.colorTintAlpha = 0.2
+        visualEffectView.blurRadius = blurValue
+        visualEffectView.scale = 1
+        self.addSubview(visualEffectView)
+    }
+}
 
 
-
+enum DEVICE_TYPE: Int {
+    case iPhone_6 = 667
+    case iPhone_6_Plus = 847
+//    case iPhone_6s = 667
+//    case iPhone_6s_Plus = 847
+    case iPhone_SE_1st_gen = 568
+//    case iPhone_7 = 667
+//    case iPhone_7_Plus = 847
+//    case iPhone_8 = 667
+    case iPhone_8_Plus = 736
+    case iPhone_X = 812
+//    case iPhone_XS = 812
+    case iPhone_XS_Max = 896
+//    case iPhone_XR = 896
+//    case iPhone_11 = 896
+//    case iPhone_11_Pro = 812
+//    case iPhone_11_Pro_Max = 896
+//    case iPhone_SE_2nd_gen = 667
+    case iPhone_12 = 844
+//    case iPhone_12_Pro = 844
+    case iPhone_12_Pro_Max = 926
+//    case iPhone_12_mini = 812
+}

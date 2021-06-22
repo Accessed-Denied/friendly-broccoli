@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTabBarView" customModule="EASY" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTabBarView" customModule="friendly_broccoli" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="CustomTabBarView" customModule="EASY" customModuleProvider="target">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="CustomTabBarView" customModule="friendly_broccoli" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="365" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfB-5B-Gae" customClass="sainiCardView" customModule="EASY" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfB-5B-Gae" customClass="sainiCardView" customModule="friendly_broccoli" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="365" height="50"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kzs-6n-OHO">
@@ -39,7 +40,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="NYm-PP-naa" firstAttribute="leading" secondItem="7Xx-eU-0N5" secondAttribute="leading" id="27w-Zc-whv"/>
                                         <constraint firstAttribute="bottom" secondItem="YDT-Qw-hLs" secondAttribute="bottom" constant="2" id="MHt-4L-30z"/>
@@ -67,7 +68,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="1za-9T-yLS" secondAttribute="bottom" constant="2" id="Itb-pX-ZU3"/>
                                         <constraint firstAttribute="trailing" secondItem="28Y-PS-ZN0" secondAttribute="trailing" id="K8E-TD-h7R"/>
@@ -98,7 +99,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="CuZ-Wr-OeS" firstAttribute="top" secondItem="HfG-Uy-evx" secondAttribute="top" id="6d9-Ad-ogO"/>
                                         <constraint firstAttribute="bottom" secondItem="nkE-eC-cg4" secondAttribute="bottom" constant="2" id="Gbl-lV-pyf"/>
@@ -126,7 +127,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="sdu-nc-6Lw" secondAttribute="bottom" constant="2" id="4no-66-37L"/>
                                         <constraint firstItem="6OC-Xw-ZgJ" firstAttribute="top" secondItem="Gji-Go-9iZ" secondAttribute="top" id="C6s-VF-bM2"/>
@@ -154,7 +155,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="KD0-6c-bSe" secondAttribute="bottom" id="HWf-Ym-j97"/>
                                         <constraint firstAttribute="trailing" secondItem="KD0-6c-bSe" secondAttribute="trailing" id="Jdq-5t-1zE"/>
@@ -165,6 +166,9 @@
                                     </constraints>
                                 </view>
                             </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="oke-uA-saz"/>
+                            </constraints>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -181,6 +185,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="bfB-5B-Gae" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="LXF-L6-w9M"/>
@@ -190,7 +195,6 @@
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <connections>
                 <outlet property="Btn1" destination="NYm-PP-naa" id="L0U-6a-fuf"/>
                 <outlet property="Btn2" destination="28Y-PS-ZN0" id="m99-AC-bKd"/>
@@ -213,5 +217,8 @@
         <image name="Settings_" width="24.5" height="22.5"/>
         <image name="home_select" width="22" height="24"/>
         <image name="home_unselect" width="22" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

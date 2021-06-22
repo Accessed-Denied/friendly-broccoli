@@ -60,4 +60,8 @@ struct AppConstants {
     static var shouldPlaySound = true
 }
 
-
+//MARK: - SCREEN
+struct SCREEN {
+    static var WIDTH = UIScreen.main.bounds.size.width
+    static var HEIGHT = UIScreen.main.bounds.size.height
+}
