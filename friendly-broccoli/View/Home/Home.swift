@@ -9,19 +9,14 @@
 import UIKit
 
 class Home: UIViewController,UICollectionViewDelegateFlowLayout {
-    @IBOutlet weak var collectionView: UICollectionView!
     
+    // OUTLETS
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var navBarView: UIView!
+    @IBOutlet weak var bottomConstraintOfCollectionView: NSLayoutConstraint!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        log.success("\(Log.stats())This is a success log Test and i want this log on my server")/
-        log.error(" \(Log.stats())This is an error log test i want this log on my server")/
-        log.url(" \(Log.stats())This is a url log Test: https://google.com i want this log on my server")/
-        log.warning(" \(Log.stats())This a warning test! i want this log on my server")/
-        log.ln(" \(Log.stats())Line Test i want this log on my server")/
-        
+        super.viewDidLoad()        
         configUI()
         
         // Do any additional setup after loading the view.
@@ -36,25 +31,35 @@ class Home: UIViewController,UICollectionViewDelegateFlowLayout {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-          if self.tabBarController != nil
-          {
-              let tabBar : CustomTabBarController = self.tabBarController as! CustomTabBarController
-              self.edgesForExtendedLayout = UIRectEdge.bottom
-              tabBar.setTabBarHidden(tabBarHidden: false)
-          }
-      }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        super.viewWillAppear(animated)
+        if self.tabBarController != nil
+        {
+            let tabBar : CustomTabBarController = self.tabBarController as! CustomTabBarController
+            self.edgesForExtendedLayout = UIRectEdge.bottom
+            tabBar.setTabBarHidden(tabBarHidden: false)
+        }
+        
+        let screenHeight = SCREEN.HEIGHT
+        let height: DEVICE_TYPE = DEVICE_TYPE(rawValue: Int(screenHeight)) ?? .iPhone_6
+        switch height {
+        case .iPhone_6:
+            bottomConstraintOfCollectionView.constant = 56
+        case .iPhone_6_Plus:
+            bottomConstraintOfCollectionView.constant = 56
+        case .iPhone_SE_1st_gen:
+            bottomConstraintOfCollectionView.constant = 56
+        case .iPhone_8_Plus:
+            bottomConstraintOfCollectionView.constant = 56
+        case .iPhone_X:
+            bottomConstraintOfCollectionView.constant = 100
+        case .iPhone_XS_Max:
+            bottomConstraintOfCollectionView.constant = 90
+        case .iPhone_12:
+            bottomConstraintOfCollectionView.constant = 90
+        case .iPhone_12_Pro_Max:
+            bottomConstraintOfCollectionView.constant = 96
+        }
     }
-    */
-
 }
 
 
